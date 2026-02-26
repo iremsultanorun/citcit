@@ -1,0 +1,86 @@
+.footer {
+    width: 100%;
+    padding: var(--space-md);
+    background-color: var(--color-dark);
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto auto;
+    row-gap: var(--space-md);
+}
+
+.footer_logo {
+    width: 100px;
+    height: 100px;
+    background: url(/citcit-logo.jpeg);
+    background-position: 50%;
+    background-size: cover;
+    border-radius: 100%;
+}
+
+.footer_slogan {
+    font-style: italic;
+    font-size: var(--font-sm);
+    padding: var(--space-md) 0;
+    color: var(--color-secondary);
+}
+
+.footer_info {
+    width: 100%;
+    padding: var(--space-sm);
+}
+
+.footer_contact {
+    margin-top: var(--space-md);
+}
+
+.footer_contactTitle {
+    font-size: var(--font-lg);
+    color: var(--color-white);
+}
+
+.footer_socials {
+    margin-top: var(--space-md);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: var(--space-sm);
+}
+
+.footer_socialLink {
+    font-size: var(--font-lg);
+    color: var(--color-white);
+}
+
+.footer_map {
+    width: 100%;
+    height: 300px;
+}
+
+.footer_copyright {
+    text-align: center;
+    color: var(--color-white);
+    grid-column: 1/12;
+    text-transform: capitalize;
+}
+@media screen and (max-width:900px) {
+   .footer{
+    grid-template-columns: 1fr 1.5fr;
+   }
+
+}
+@media screen and (max-width:700px) {
+   .footer{
+    grid-template-columns: 1fr;
+    grid-template-columns: auto auto auto;
+   }
+   .footer_info{
+    grid-column: 1/12;
+   }
+   .footer_map {
+    grid-column: 1/12;
+}
+.footer_socialLink {
+    font-size: var(--font-xl);
+}
+
+}

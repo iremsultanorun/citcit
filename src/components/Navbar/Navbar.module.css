@@ -1,0 +1,35 @@
+.navbar{
+    position: relative;
+    width: 100dvw;
+}
+.navbarLogo {
+    width: 100px;
+    height: 100px;
+    background: url(/citcit-logo.jpeg);
+    background-position: 50%;
+    background-size: cover;
+    border-radius: 100%;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+@media screen and (max-width:1000px) {
+    .navbarLogo {
+        top: 10px;
+        left: 10px;
+        width: 90px;
+        height: 90px;
+    }
+}
+@media screen and (max-width:767px) {
+    .navbarLogo {
+        width: 80px;
+        height: 80px;
+    }
+}
+@media screen and (max-width:425px) {
+    .navbarLogo {
+        width: 70px;
+        height: 70px;
+    }
+}

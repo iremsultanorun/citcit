@@ -1,0 +1,99 @@
+.home_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100dvw;
+    height: 100dvh;
+    color: var(--color-white);
+    padding: var(--space-md);
+}
+
+.home_heroImage {
+    width: 400px;
+    height: auto;
+}
+
+.home_intro {
+    margin-top: var(--space-lg);
+    position: relative;
+}
+
+.home_brand {
+text-wrap: nowrap;
+    font-weight: 800;
+    display: inline-block;
+    color: var(--color-white);
+    font-size: var(--font-lg);
+    text-transform: uppercase;
+    background-color: var(--color-primary);
+    padding: var(--space-sm);
+    margin-bottom: var(--space-xs);
+}
+.home_headline {
+    text-transform: uppercase;
+    background-color: var(--color-dark);
+    padding: var(--space-sm);
+    font-size: var(--font-lg);
+  line-height: 24px;
+}
+.home_arrow {
+    width: 40px;
+    height: auto;
+    position: absolute;
+    right: -20px;
+    top: 60px;
+    transform: rotate(230deg);
+}
+.home_location {
+    background-color: var(--color-primary);
+    padding: var(--space-sm);
+    font-size: var(--font-lg);
+    color: var(--color-white);
+    animation: swing .5s ease-in-out 2 forwards;
+}
+
+@keyframes swing {
+    0%{
+        transform:translateX(-15px) translateY(16px) rotate(-3deg);
+    }
+    50%{
+        transform:translateX(-15px) translateY(16px) rotate(0deg);
+    }
+    100%{
+        transform:translateX(-15px) translateY(16px) rotate(-3deg);
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .home_heroImage {
+        width: 350px;
+    }
+}
+@media screen and (max-width:600px) {
+    .home_heroImage {
+        width: 300px;
+    }
+}
+@media screen and (max-width:425px) {
+    .home_heroImage {
+       width: 250px;
+       margin-top: 60px;
+    }
+    .home_location {
+        display: inline-block;
+        padding: var(--space-sm) var(--space-lg);
+    }
+    .home_arrow {
+        width: 55px;
+        right: -5px;
+   top:80px;
+   transform: rotate(260deg);
+    }
+}
+@media screen and (max-width:386px) {
+    .home_arrow {
+   top:98px;
+    }
+}
