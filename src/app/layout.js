@@ -14,7 +14,25 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Çıt Çıt",
+  title: "Çıt Çıt – Yakında Açılıyor!",
+  description: "Çıt Çıt, hızlı ve lezzetli atıştırmalıklarla yakında hizmetinizde! Takipte kalın ve açılışımızı kaçırmayın.",
+  keywords: ["fast food", "çıtır çıtır", "yakında açılıyor", "burger", "atıştırmalık"],
+  authors: [{ name: "Çıt Çıt", url: "https://www.citcit.com" }],
+  openGraph: {
+    title: "Çıt Çıt – Yakında Açılıyor!",
+    description: "Çıt Çıt, hızlı ve lezzetli atıştırmalıklarla yakında hizmetinizde! Takipte kalın.",
+    url: "https://www.citcit.com",
+    siteName: "Çıt Çıt",
+    images: [
+      {
+        url: "/citcit-logo.svg",
+        width: 800,
+        height: 600,
+      },
+    ],
+    locale: "tr_TR",
+    type: "website",
+  },
   icons: {
     icon: "/citcit-logo.svg", 
   },
